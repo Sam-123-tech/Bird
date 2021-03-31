@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Bird Animation</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            animation: bg-color 5s infinite;
+        }
+        .pp{
+            position: relative;
+            width: 40%;
+            left: 100%;
+            animation: fly 5s infinite;
+        }
+        @keyframes bg-color{
+            0%{background-color: #6666ff;}
+            25%{background-color: #3398db;}
+            50%{background-color: skyblue;}
+            75%{background-color: #3398;}
+            100%{background-color: aqua;}
+        }
+        @keyframes fly{
+            0%{
+                left: -50%;
+                top: 5px;
+            }
+            25%{
+                top: 150px;
+            }
+            50%{
+                top: 30px;
+            }
+            75%{
+                top: 25px;
+            }
+            100%{
+               right: -100px;
+                top: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pp">
+        <img src="pp.gif" class="pp">
+    </div>
+</body>
+</html>
